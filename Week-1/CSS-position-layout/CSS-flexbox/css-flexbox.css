@@ -1,0 +1,86 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 2em;
+  color: white;
+  padding: 0 10vw;
+}
+
+.container {
+  background-color: #f7f1e3;
+  height: 700px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.box {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex: 1 1 0px;
+  /* flex in each .box */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-one {
+  background-color: #f7d794;
+  height: 100px;
+  width: 90px;
+  order: 8;
+}
+
+.box-two {
+  background-color: #84817a;
+  height: 80px;
+  width: 100px;
+  order: 1;
+}
+
+.box-three {
+  background-color: #33d9b2;
+  height: 100px;
+  width: 100px;
+}
+
+.box-four {
+  background-color: #fc5c65;
+  height: 100px;
+  width: 150px;
+  order: 2;
+}
+
+.box-five {
+  background-color: #e58e26;
+  height: 140px;
+  width: 130px;
+}
+
+.box-six {
+  background-color: #4b6584;
+  height: 200px;
+  width: 80px;
+}
+
+.box-seven {
+  background-color: #20bf6b;
+  height: 100px;
+  width: 170px;
+}

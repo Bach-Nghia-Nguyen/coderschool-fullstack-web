@@ -1,0 +1,65 @@
+:root {
+  font-size: 1.1em;
+}
+
+section {
+  border: dotted 1px black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+.solution {
+  border: solid 1px rgb(221, 220, 220);
+  background-color: rgb(247, 255, 235);
+  padding: 0 30px 10px 20px;
+}
+
+table,
+th,
+td {
+  border: solid 1px black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+nav {
+  background-color: rgb(164, 202, 164);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.joke {
+  background-color: black;
+}
+
+.question-part {
+  border: solid 1px grey;
+  background-color: rgb(224, 224, 224);
+  display: inline-block;
+  box-sizing: border-box;
+  padding-right: 80px;
+}
+
+fieldset {
+  display: inline-block;
+  padding: 40px;
+}
+
+form {
+  text-align: center;
+  border: solid 1px black;
+  background-color: burlywood;
+  display: inline-block;
+  padding: 20px;
+}

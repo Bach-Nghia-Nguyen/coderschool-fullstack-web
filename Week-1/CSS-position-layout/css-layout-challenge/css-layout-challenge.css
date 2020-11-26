@@ -1,0 +1,356 @@
+body {
+  color: white;
+  /* font-family: Roboto, sans-serif; */
+  font-family: "Lucida Console", Monaco, monospace;
+}
+section {
+  border: 1px solid black;
+  height: 500px;
+  margin: 20px;
+}
+
+.heading {
+  color: black;
+}
+
+/* Utilities */
+
+.box-square {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-dark {
+  background-color: #2f3542;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.bg-bright {
+  background-color: #cad3c8;
+}
+
+#example {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Challenge 1 style */
+#challenge1 .container,
+#challenge1 .right-side-div {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row; */
+}
+
+/* Challenge 2 style */
+
+#challenge2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#challenge2 .left {
+  align-self: flex-start;
+}
+
+#challenge2 .right {
+  align-self: flex-end;
+}
+
+#challenge2 .center {
+  align-self: center;
+}
+
+/* Challenge 3 style */
+#challenge3 .box-square {
+  margin: auto;
+}
+
+#challenge3 .div1 {
+  margin-top: 20px;
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+#challenge3 .div1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#challenge3 .div1 .div2 {
+  align-self: center;
+  width: 25vmin;
+  height: 25vmin;
+}
+
+/* Challenge 4 style */
+#challenge4 .absolute {
+  position: absolute;
+}
+
+#challenge4 .relative {
+  position: relative;
+  left: 60px;
+  top: 60px;
+}
+
+/* Challenge 5 style */
+#challenge5 {
+  display: flex;
+  flex-direction: column;
+}
+
+#challenge5 .left {
+  align-self: flex-start;
+}
+
+#challenge5 .right {
+  align-self: flex-end;
+}
+
+#challenge5 .center {
+  align-self: center;
+}
+
+/* Challenge 6 style */
+#challenge6 {
+  position: relative;
+}
+
+#challenge6 .absolute1 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 480px;
+  height: 240px;
+}
+
+#challenge6 .absolute1 .absolute2,
+#challenge6 .absolute1 .absolute3 {
+  position: absolute;
+}
+
+#challenge6 .absolute1 .absolute2 {
+  left: 0;
+  bottom: 0;
+  width: 140px;
+  height: 140px;
+}
+
+#challenge6 .absolute1 .absolute3 {
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 140px;
+}
+
+/* Challenge 7 style */
+#challenge7 .bg-dark {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+#challenge7 .absolute {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+}
+
+/* Challenge 8 style */
+#challenge8 .bg-dark {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+#challenge8 .absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+}
+
+/* Challenge 9 style */
+#challenge9 .bg-dark {
+  width: 200px;
+  height: 360px;
+  position: relative;
+}
+
+#challenge9 .bg-dark .absolute2 {
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+
+#challenge9 .bg-dark .absolute3 {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+
+/* Challenge 10 style */
+#challenge10 .box-square {
+  margin: auto;
+}
+
+#challenge10 .div1 {
+  margin-top: 40px;
+  width: 500px;
+  height: 230px;
+}
+
+#challenge10 .div1 .flex {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+#challenge10 .div1 .flex .div2,
+#challenge10 .div1 .flex .div3 {
+  width: 150px;
+  height: 150px;
+}
+
+/* Challenge 11 style */
+#challenge11 .bg-dark {
+  width: 200px;
+  height: 360px;
+  position: relative;
+}
+
+#challenge11 .bg-black {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 80%;
+}
+
+#challenge11 .bg-bright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 32%;
+  width: 65%;
+}
+
+/* Challenge 12 style */
+#challenge12 .bg-dark {
+  width: 200px;
+  height: 360px;
+  position: relative;
+}
+
+#challenge12 .bg-black {
+  position: absolute;
+  bottom: 0;
+  right: -40%;
+  height: 50%;
+  width: 80%;
+}
+
+#challenge12 .bg-bright {
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  height: 32%;
+  width: 65%;
+}
+
+/* Challenge 13 style */
+#challenge13 .absolute {
+  position: absolute;
+}
+
+#challenge13 .relative {
+  position: relative;
+  left: 50px;
+  top: 28px;
+}
+
+/* Challenge 14 style */
+#challenge14 {
+  position: relative;
+}
+
+#challenge14 .bg-dark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+}
+
+#challenge14 .absolute {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+}
+
+/* Challenge 15 style */
+#challenge15 {
+  position: relative;
+}
+
+#challenge15 .invisible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47%;
+  height: 80%;
+}
+
+#challenge15 .invisible .div1 {
+  position: absolute;
+  width: 30vmin;
+  height: 30vmin;
+  top: 0;
+  left: 0;
+}
+
+#challenge15 .invisible .div2 {
+  position: absolute;
+  width: 15vmin;
+  height: 15vmin;
+  right: 0;
+  top: 0;
+}
+
+#challenge15 .invisible .div3 {
+  position: absolute;
+  width: 15vmin;
+  height: 15vmin;
+  bottom: 0;
+  left: 0;
+}
+
+#challenge15 .invisible .div4 {
+  position: absolute;
+  width: 30vmin;
+  height: 30vmin;
+  right: 0;
+  bottom: 0;
+}

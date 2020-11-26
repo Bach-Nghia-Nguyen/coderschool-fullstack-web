@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="css_position.css" />
+  </head>
+  <body id="sticky">
+    <!-- Static Position -->
+    <section id="static">
+      <h1>position: static;</h1>
+      <div class="box box-blue">We</div>
+      <div class="box box-green">Are</div>
+      <div class="box box-orange">Static</div>
+    </section>
+
+    <!-- Relative Position -->
+    <section id="relative">
+      <h1>position: relative;</h1>
+      <div class="box box-blue">I</div>
+      <div class="box box-green">Am</div>
+      <div class="box box-orange">Relative</div>
+    </section>
+
+    <!-- Absolute Position -->
+    <section id="absolute">
+      <h1>position: absolute;</h1>
+      <div class="box box-blue">They</div>
+      <div class="box box-green">Are</div>
+      <div class="box box-orange">Absolute</div>
+    </section>
+
+    <!-- Fixed Position -->
+    <section id="fixed">
+      <h1>position: fixed;</h1>
+      <div class="box box-blue">She</div>
+      <div class="box box-green">Is</div>
+      <div class="box box-orange">Fixed</div>
+    </section>
+
+    <!-- Sticky Position -->
+    <section>
+      <h1>position: sticky;</h1>
+      <div class="box box-blue">He</div>
+      <div class="box box-green">Is</div>
+      <div class="box box-orange box-orange-sticky">Sticky</div>
+    </section>
+
+    <!-- Stacking Order -->
+    <section id="stacking">
+      <h1>z-index</h1>
+      <div class="box box-yellow box-square"></div>
+      <div class="box box-orange box-square"></div>
+      <div class="box box-green box-square"></div>
+      <div class="box box-blue box-square"></div>
+    </section>
+  </body>
+</html>

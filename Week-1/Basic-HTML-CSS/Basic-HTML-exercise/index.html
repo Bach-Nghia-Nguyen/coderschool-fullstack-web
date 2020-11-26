@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 1 - HTML Basic</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="html-comment">
+      <p>
+        <strong>HTML comment:</strong> Commtent the second paragraph of the
+        following HTML document
+        <pre class="question-part">
+          <code>
+            &lt;h3&gt;In this course we'll learn:&lt;/h3&gt;
+            &lt;p&gt;HTML &amp; CSS&lt;/p&gt;
+            &lt;p&gt;Python&lt;/p&gt;
+            &lt;p&gt;JavaScript&lt;/p&gt;
+          </code>
+        </pre>
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;h3&gt;In this course we'll learn:&lt;/h3&gt;
+            &lt;!-- &lt;p&gt;HTML &amp; CSS&lt;/p&gt; --&gt;
+            &lt;p&gt;Python&lt;/p&gt;
+            &lt;p&gt;JavaScript&lt;/p&gt;
+          </code>
+        </pre>
+        <h3>In this course we'll learn:</h3>
+        <!-- <p>HTML & CSS</p> -->
+        <p>Python</p>
+        <p>JavaScript</p>
+      </div>
+    </section>
+
+    <section id="hyperlink-1">
+      <p>
+        <strong>Hyperlink 1:</strong> Create a hyperlink that leads to
+        <code>www.coderschool.vn</code>
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;Study at &lt;a href="https://www.coderschool.vn/vi/"&gt;CoderSchool&lt;/a&gt;&lt;/p&gt;
+          </code>
+        </pre>
+        <p>Study at <a href="https://www.coderschool.vn/vi/">CoderSchool</a></>
+      </div>
+    </section>
+
+    <section id="hyperlink-2">
+      <p>
+        <strong>Hyperlink 2:</strong> Create a hyperlink to take you to
+        another part of the same HTML document
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;Go to &lt;a href="#image"&gt;Assignment Image&lt;/a&gt;&lt;/p&gt;
+          </code>
+        </pre>
+        <p>Go to <a href="#image">Assignment Image</a></p>
+      </div>
+    </section>
+
+    <section id="hyperlink-3">
+      <p>
+        <strong>Hyperlink 3:</strong> Create a hyperlink that opens the
+        linked document in a separate browser tab
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;Open the &lt;a href="doodle.html" target="_blank"&gt;Doodle page&lt;/a&gt; &lt;/p&gt;
+          </code>
+        </pre>
+        <p>Open the <a href="doodle.html" target="_blank">Doodle page</a></p>
+      </div> 
+    </section>
+
+    <section id="article">
+      <p>
+        <strong>Article:</strong> Create an article element that has a title 
+        and a paragraph (HTML5 article element represents independent item 
+        like a blog entry in an web document).
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;article&gt;
+              &lt;h2&gt;What is landmine?&lt;/h2&gt;
+              &lt;p&gt;
+                Answer: A land mine is an explosive device concealed under or 
+                on the ground and designed to destroy or disable enemy targets.
+              &lt;/p&gt;
+            &lt;/article&gt;
+          </code>
+        </pre>
+        <article>
+          <h2>What is landmine?</h2>
+          <p>
+            Answer: A land mine is an explosive device concealed under or
+            on the ground and designed to destroy or disable enemy targets.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="audio">
+      <p>
+        <strong>Audio:</strong> Embed an audio clip into a web page 
+        (Ref: https://htmlreference.io/element/audio/)
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+              &lt;audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"&gt;
+              &lt;/audio&gt;
+          </code>
+        </pre>
+        <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+        </audio>
+      </div>
+    </section>
+
+    <section id="video">
+      <p>
+        <strong>Video:</strong> Embed an video clip into a web page.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;video controls src="http://techslides.com/demos/sample-videos/small.mp4"&gt;
+            &lt;video&gt;
+          </code>
+        </pre>
+        <video controls src="http://techslides.com/demos/sample-videos/small.mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="image">
+      <p>
+        <strong>Image:</strong> Create an image with these attributes:
+      </p>
+      <ul>
+        <li>An alternate text</li>
+        <li>The size of the image is 250 pixels wide and 400 pixels tall.</li>
+      </ul>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;img src="https://www.character-online.com/content/images/thumbs/0012074_doctor-who-the-thirteenth-doctors-tardis.jpeg" 
+            alt="Doctor Who's Tardis" width="250px" height="400px"&gt;
+          </code>
+        </pre>
+        <img src="https://www.character-online.com/content/images/thumbs/0012074_doctor-who-the-thirteenth-doctors-tardis.jpeg" 
+        alt="Doctor Who's Tardis" width="250px" height="400px">
+      </div>
+    </section>
+
+    <section id="bold-text">
+      <p>
+        <strong>Bold text:</strong> How to write bold text using HTML tags?
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;This is how you write &lt;b&gt;BOLD TEXT&lt;/b&gt;&lt;/p&gt;
+          </code>
+        </pre>
+        <p>This is how you write <b>BOLD TEXT</b></p>
+      </div>
+    </section>
+
+    <section id="underline-text">
+      <p>
+        <strong>Underline text:</strong> How to underline a text in a HTML document?
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;
+              2 ways to draw a line under the text: 
+              &lt;u&gt;u tags&lt;/u&gt; and &lt;span style="text-decoration: underline;"&gt;CSS text-decoration&lt;/span&gt;
+            &lt;/p&gt;
+          </code>
+        </pre>
+        <p>
+          2 ways to draw a line under the text: 
+          <u>u tags</u> and <span style="text-decoration: underline;">CSS text-decoration</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="strikeout">
+      <p>
+        <strong>Strikeout:</strong> Add a line through a word in a paragraph.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;
+              In botany, a tree is a perennial &lt;del&gt;animal&lt;/del&gt; plant with an elongated stem, 
+              or trunk, supporting branches and leaves in most species.
+            &lt;/p&gt;
+          </code>
+        </pre>
+        <p>
+          In botany, a tree is a perennial <del>animal</del> plant with an elongated stem, 
+          or trunk, supporting branches and leaves in most species.
+        </p>
+      </div>
+    </section>
+
+    <section id="line-break">
+      <p>
+        <strong>Line break:</strong> Add a line break in middle of a paragraph.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;
+              Waterboarding is a form of torture in which water is poured over a cloth 
+              covering the face and breathing passages of an immobilized captive, causing 
+              the person to experience drowning. &lt;br&gt; In the most common method of 
+              waterboarding, the captive's face is covered with cloth or some other thin 
+              material and immobilized on his/her back at an incline of 10 to 20 degrees.
+            &lt;/p&gt;
+          </code>
+        </pre>
+        <p>
+          Waterboarding is a form of torture in which water is poured over a cloth 
+          covering the face and breathing passages of an immobilized captive, causing 
+          the person to experience drowning. <br> In the most common method of 
+          waterboarding, the captive's face is covered with cloth or some other thin 
+          material and immobilized on his/her back at an incline of 10 to 20 degrees.
+        </p>
+      </div>
+    </section>
+
+    <section id="horizontal-line">
+      <p>
+        <strong>Horizontal line;</strong> Add a horizontal line between two paragraphs.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            <div>
+              &lt;p&gt;
+                A penalty kick (commonly known as a penalty or a PK) is a method of restarting play 
+                in association football, in which a player is allowed to take a single shot on the 
+                goal while it is defended only by the opposing team's goalkeeper.
+              &lt;/p&gt;
+              &lt;hr&gt;
+              &lt;p&gt;
+                It is awarded when a foul punishable by a direct free kick is committed by a 
+                player in their own penalty area.
+              &lt;/p&gt;
+            </div>
+          </code>
+        </pre>
+        <div>
+          <p>
+            A penalty kick (commonly known as a penalty or a PK) is a method of restarting play 
+            in association football, in which a player is allowed to take a single shot on the 
+            goal while it is defended only by the opposing team's goalkeeper.
+          </p>
+          <hr>
+          <p>
+            It is awarded when a foul punishable by a direct free kick is committed by a 
+            player in their own penalty area.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="unordered-list">
+      <p>
+        <strong>Unordered List:</strong> Create an unordered list with three items.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;ul&gt;
+              &lt;li&gt;Elder Wand&lt;/li&gt;
+              &lt;li&gt;Resurrection Stone&lt;/li&gt;
+              &lt;li&gt;Cloak of Invisibility&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
+        <ul>
+          <li>Elder Wand</li>
+          <li>Resurrection Stone</li>
+          <li>Cloak of Invisibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ordered-list">
+      <p>
+        <strong>Ordered List:</strong> Create three ordered lists that use 
+        numbers/uppercase ABC/roman numbers for the item. Each has 2 items.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;ol&gt;
+              &lt;li&gt;Number 1&lt;/li&gt;
+              &lt;li&gt;Number 2&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="A"&gt;
+              &lt;li&gt;Letter A&lt;/li&gt;
+              &lt;li&gt;Letter B&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="I"&gt;
+              &lt;li&gt;Ⅰ&lt;/li&gt;
+              &lt;li&gt;Ⅱ&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+        <ol>
+          <li>Number 1</li>
+          <li>Number 2</li>
+        </ol>
+        <ol type="A">
+          <li>Letter A</li>
+          <li>Letter B</li>
+        </ol>
+        <ol type="I">
+          <li>Number Ⅰ</li>
+          <li>Number Ⅱ</li>
+        </ol>
+      </div>
+      
+    </section>
+
+    <section id="definition-list">
+      <p>
+        <strong>Definition list:</strong> Create a definition list with two 
+        items. Each item has a description.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;dl&gt;
+              &lt;dt&gt;Coffee&lt;/dt&gt;
+              &lt;dd&gt;Black hot drink&lt;/dd&gt;
+              &lt;dt&gt;Milk&lt;/dt&gt;
+              &lt;dd&gt;White cold drink&lt;/dd&gt;
+            &lt;/dl&gt;
+          </code>
+        </pre>
+        <dl>
+          <dt>Coffee</dt>
+          <dd>Black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>White cold drink</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="button">
+      <p>
+        <strong>Button:</strong> Create a button that pop up a window 
+        says "Hi friend!" when click on it. Hint: onclick, alert()
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;p&gt;
+              Click &lt;button onclick="alert('Hi friend!')" type="button" id="button-greeting"&gt;Say Hi!&lt;/button&gt; to be greeted.
+            &lt;/p&gt;
+          </code>
+        </pre>
+        <p>
+          Click <button onclick="alert('Hi friend!')" type="button" id="button-greeting">Say Hi!</button> to be greeted.
+        </p>
+      </div>
+    </section>
+
+    <section id="table">
+      <p>
+        <strong>Table:</strong> Create a table with two rows, three columns, and headers.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Name&lt;/th&gt;
+                  &lt;th&gt;Age&lt;/th&gt;
+                  &lt;th&gt;Profession&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Julia&lt;/td&gt;
+                  &lt;td&gt;32&lt;/td&gt;
+                  &lt;td&gt;Network marketer&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Robert&lt;/td&gt;
+                  &lt;td&gt;26&lt;/td&gt;
+                  &lt;td&gt;Web developer&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tboby&gt;
+            &lt;/table&gt;
+          </code>
+        </pre>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Profession</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Julia</td>
+              <td>32</td>
+              <td>Network marketer</td>
+            </tr>
+            <tr>
+              <td>Robert</td>
+              <td>26</td>
+              <td>Web developer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="navigation-links">
+      <p>
+        <strong>Navigation Links:</strong> How to define a section with navigation links.
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;nav&gt;
+              &lt;a href="https://en.wikipedia.org/wiki/Cat"&gt;Cat&lt;/a&gt;
+              &lt;a href="https://en.wikipedia.org/wiki/Dog"&gt;Dog&lt;/a&gt;
+              &lt;a href="https://en.wikipedia.org/wiki/Monkey"&gt;Monkey&lt;/a&gt;
+              &lt;a href="https://en.wikipedia.org/wiki/Horse"&gt;Horse&lt;/a&gt;
+              &lt;a href="https://en.wikipedia.org/wiki/Elephant"&gt;Elephant&lt;/a&gt;
+            &lt;/nav&gt;
+          </code>
+        </pre>
+        <nav>
+          <a href="https://en.wikipedia.org/wiki/Cat">Cat</a> |
+          <a href="https://en.wikipedia.org/wiki/Dog">Dog</a> |
+          <a href="https://en.wikipedia.org/wiki/Monkey">Monkey</a> |
+          <a href="https://en.wikipedia.org/wiki/Horse">Horse</a> |
+          <a href="https://en.wikipedia.org/wiki/Elephant">Elephant</a>
+        </nav>
+      </div>
+    </section>
+
+    <section id="toggable-detail">
+      <p>
+        <strong>Toggable Details:</strong> How to define a toggable block of content with a summary and additional details. (Ref: https://htmlreference.io/element/details/)
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;details&gt;
+              &lt;summary&gt;Wanna hear a joke?&lt;/summary&gt;
+              &lt;p&gt;<span class="joke">Jet fuel can't melt steel beam</span>&lt;/p&gt;
+            &lt;/details&gt;
+          </code>
+        </pre>
+        <details>
+          <summary>Wanna hear a joke?</summary>
+          <p>Jet fuel can't melt steel beam</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="form">
+      <p>
+        <strong>Form:</strong> Create a form that asks for:
+        <pre class="question-part">
+          <code>
+            - Email, password and confirm password. Each of the field has an according placeholder.
+            - Title (Radio box), 2 options: `Developer` or `Employer`
+            - Interested in (Checkbox), 3 options: `ReactJS`, `NodeJS`, `Web Design`
+            - City (Select box), 3 options: `Hanoi`, `HCMC`, `Da Nang`
+            - Short Bio (Text area)
+            - A confirm button which is disabled.
+          </code>
+        </pre>
+      </p>
+      <div class="solution">
+        <h3>Solution:</h3>
+        <pre>
+          <code>
+            &lt;form action="" method="GET"&gt; 
+              &lt;h3&gt;Sign Up&lt;/h3&gt; 
+              &lt;fieldset&gt;
+                &lt;legend&gt;Account&lt;/legend&gt;
+                &lt;input type="text" placeholder="Email"&gt; &lt;br&gt; 
+                &lt;input type="password" placeholder="Password"&gt; &lt;br&gt;
+                &lt;input type="password" placeholder="Confirm password"&gt; &lt;br&gt; 
+              &lt;/fieldset&gt; 
+              &lt;br&gt; 
+              &lt;fieldset&gt; 
+               &lt;legend&gt;Position&lt;/legend&gt; 
+                &lt;label for="developer"&gt;Developer&lt;/label&gt;
+                &lt;input type="radio" name="job-position" id="developer" &lt;br&gt;
+                &lt;label for="employer"&gt;Employer&lt;/label&gt;
+                &lt;input type="radio" name="job-position" id="employer" &lt;br&gt;
+              &lt;/fieldset&gt;
+              &lt;br&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;You are interested in:&lt;/legend&gt;
+                &lt;label for="reactjs"&gt;ReactJS&lt;/label&gt;
+                &lt;input type="checkbox" name="subject" id="reactjs" &lt;br&gt;
+                &lt;label for="nodejs"&gt;NodeJS&lt;/label&gt;
+                &lt;input type="checkbox" name="subject" id="nodejs" &lt;br&gt;
+                &lt;label for="web-design"&gt;Web Design&lt;/label&gt;
+                &lt;input type="checkbox" name="subject" id="web-design" &lt;br&gt; 
+              &lt;/fieldset&gt;
+              &lt;br&gt; 
+              &lt;fieldset&gt; 
+                &lt;legend&gt;Which city are you living in?&lt;/legend&gt;
+                &lt;label for="city"&gt;Choose a city&lt;/label&gt;
+                &lt;select name="city" id="city"&gt; 
+                  &lt;option value="hanoi"&gt;Hanoi&lt;/option&gt; 
+                  &lt;option value="hcmc"&gt;HCMC&lt;/option&gt; 
+                  &lt;option value="da-nang"&gt;Da Nang&lt;/option&gt; 
+                &lt;/select&gt; 
+              &lt;/fieldset&gt;
+              &lt;br&gt;
+              &lt;label for="short-bio"&gt;&lt;/label&gt;
+              &lt;textarea name="short-bio" id="short-bio" cols="30" rows="10"&gt;&lt;/textarea&gt;
+              &lt;div class="submit"&gt;
+                &lt;button type="submit" disabled&gt;Confirm&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+        <form action="" method="GET">
+          <h3>Sign Up</h3>
+          <fieldset>
+            <legend>Account</legend>
+            <input type="text" placeholder="Email"> <br>
+            <input type="password" placeholder="Password"> <br>
+            <input type="password" placeholder="Confirm password"> <br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Position</legend>
+            <label for="developer">Developer</label>
+            <input type="radio" name="job-position" id="developer"><br>
+            <label for="employer">Employer</label>
+            <input type="radio" name="job-position" id="employer"><br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>You are interested in:</legend>
+            <label for="reactjs">ReactJS</label>
+            <input type="checkbox" name="subject" id="reactjs"> <br>
+            <label for="nodejs">NodeJS</label>
+            <input type="checkbox" name="subject" id="nodejs"> <br>
+            <label for="web-design">Web Design</label>
+            <input type="checkbox" name="subject" id="web-design"> <br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Which city are you living in?</legend>
+            <label for="city">Choose a city</label>
+            <select name="city" id="city">
+              <option value="hanoi">Hanoi</option>
+              <option value="hcmc">HCMC</option>
+              <option value="da-nang">Da Nang</option>
+          </select>
+          </fieldset>
+          <br>
+          <label for="short-bio"></label>
+          <textarea name="short-bio" id="short-bio" cols="30" rows="10"></textarea>
+
+          <div class="submit">
+            <button type="submit" disabled>Confirm</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
