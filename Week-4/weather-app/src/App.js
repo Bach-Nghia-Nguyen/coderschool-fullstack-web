@@ -10,7 +10,8 @@ import { cities } from "./config";
 
 const API_KEY = "24a50225c459b3b6b8cafba62baedc58";
 
-function App() {
+const App = () => {
+  // states
   const [geoLocation, setGeoLocation] = useState({
     latitude: null,
     longitude: null,
@@ -108,6 +109,6 @@ function App() {
       </Container>
     </>
   );
-}
+};
 
 export default App;
