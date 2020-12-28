@@ -22,7 +22,11 @@ const PublicNavbar = () => {
         </Nav.Link>
       </Nav>
       <Nav>
-        <a href="#your_github_repo_link" target="_blank">
+        <a
+          href="https://github.com/Bach-Nghia-Nguyen/coderschool-fullstack-web/tree/master/Week-5/book-store-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={githubIco} alt="Github" width="32px" />
         </a>
       </Nav>
