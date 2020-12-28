@@ -8,7 +8,7 @@ import WeatherInfo from "./components/WeatherInfo";
 import { ClipLoader } from "react-spinners";
 import { cities } from "./config";
 
-const API_KEY = "24a50225c459b3b6b8cafba62baedc58";
+// const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
   // states
@@ -24,21 +24,20 @@ const App = () => {
   const url = getURL(geoLocation.latitude, geoLocation.longitude);
 
   function getURL(latitude, longitude) {
-    if (selectedCity) {
-      return `https://api.openweathermap.org/data/2.5/weather?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}&appid=${API_KEY}`;
-    }
-    if (!longitude || !latitude) {
-      return "";
-    }
-    return `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+    if (selectedCity)
+      return `http://localhost:5000/api/weather?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}`;
+
+    if (!longitude || !latitude) return "";
+
+    return `http://localhost:5000/api/weather?lat=${latitude}&lon=${longitude}`;
   }
 
-  console.log("start render");
+  // console.log("start render");
 
   useEffect(() => {
     console.log("Loading location");
     setLoading(true);
-    const success = (position) => {
+    const onPosition = (position) => {
       setGeoLocation({
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
@@ -46,14 +45,16 @@ const App = () => {
       });
       setLoading(false);
     };
-    const error = (error) => {
+    const onError = (error) => {
       setGeoLocation({
         position: null,
         error: error,
       });
       setLoading(false);
     };
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(onPosition, onError);
+    const listener = navigator.geolocation.watchPosition(onPosition, onError);
+    return () => navigator.geolocation.clearWatch(listener);
   }, []);
 
   useEffect(() => {
@@ -85,7 +86,7 @@ const App = () => {
   return (
     <>
       <PublicNavbar />
-      <Container>
+      <Container fluid>
         <Row>
           <Col md={3} className="d-none d-md-block">
             <SideMenu
