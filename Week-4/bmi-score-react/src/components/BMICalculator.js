@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 const BMICalculator = () => {
-  // states
-  const [result, setResult] = useState("Result:");
+  // const [result, setResult] = useState("Result:");
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
   const [history, setHistory] = useState([]);
@@ -35,17 +34,21 @@ const BMICalculator = () => {
   const handleHeightChange = (e) => {
     // console.log(e.target.value);
     const inputHeight = Number(e.target.value);
-    console.log(inputHeight);
-    if (inputHeight <= 250) {
+    // console.log(inputHeight);
+
+    // the height must be positive and less than or euqal to 250 cm, otherwise it is invalid
+    if (inputHeight > 0 && inputHeight <= 250) {
       setHeight(inputHeight);
     }
   };
 
   const handleWeightChange = (e) => {
-    // console.log(e.target.value);
+    // console.log(e.target.value)
     const inputWeight = Number(e.target.value);
-    console.log(inputWeight);
-    if (inputWeight <= 400) {
+    // console.log(inputWeight);
+
+    // the weight must be positive and less than or equal to 400 kg, othewise it is invalid
+    if (inputWeight > 0 && inputWeight <= 400) {
       setWeight(inputWeight);
     }
   };
@@ -54,16 +57,21 @@ const BMICalculator = () => {
     <div>
       <h1>BMI Calculator</h1>
       <form onSubmit={handleSubmit}>
+        <label htmlFor="weight">Weight (kg)</label>
         <input
           className="form-control"
+          id="weight"
           type="number"
           name="weight"
           placeholder="Weight (kg)"
           value={weight}
           onChange={handleWeightChange}
         />
+
+        <label htmlFor="height">Height (cm)</label>
         <input
           className="form-control"
+          id="height"
           type="number"
           name="height"
           placeholder="Height (cm)"
