@@ -11,7 +11,11 @@ const PublicNavbar = () => {
       </Navbar.Brand>
       <Nav className="mr-auto"></Nav>
       <Nav>
-        <a href="#your_github_repo_link" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Bach-Nghia-Nguyen/coderschool-fullstack-web/tree/master/Week-4/weather-app"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={githubIco} alt="Github" width="32px" />
         </a>
       </Nav>

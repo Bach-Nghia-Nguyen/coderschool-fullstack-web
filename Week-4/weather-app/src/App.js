@@ -8,7 +8,7 @@ import WeatherInfo from "./components/WeatherInfo";
 import { ClipLoader } from "react-spinners";
 import { cities } from "./config";
 
-// const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
   // states
@@ -25,11 +25,11 @@ const App = () => {
 
   function getURL(latitude, longitude) {
     if (selectedCity)
-      return `http://localhost:5000/api/weather?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}`;
+      return `https://api.openweathermap.org/data/2.5/weather?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}&appid=${API_KEY}`;
 
     if (!longitude || !latitude) return "";
 
-    return `http://localhost:5000/api/weather?lat=${latitude}&lon=${longitude}`;
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
   }
 
   // console.log("start render");
