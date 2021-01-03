@@ -7,11 +7,12 @@ const Asm1 = () => {
   const [name, setName] = useState("");
   const [yoB, setYoB] = useState(0);
   const [errorMessage, setErrorMessage] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (yoB >= 2020) {
+    if (yoB >= 2021) {
       // show an error message
-      const msg = "YoB need to be smaller than 2020";
+      const msg = "YoB need to be smaller than 2021";
       setErrorMessage(msg);
     } else {
       setErrorMessage("");
@@ -25,12 +26,14 @@ const Asm1 = () => {
         word.length > 0 ? word[0].toUpperCase() + word.slice(1) : ""
       )
       .join(" ");
+
     setName(newName);
   };
 
   const handleYoBChange = (e) => {
     setYoB(e.target.value);
   };
+
   return (
     <Container>
       <UserForm

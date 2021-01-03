@@ -4,9 +4,9 @@ const UserForm = ({
   name,
   yoB,
   errorMessage,
+  handleSubmit,
   handleNameChange,
   handleYoBChange,
-  handleSubmit,
 }) => {
   return (
     <form onSubmit={handleSubmit}>

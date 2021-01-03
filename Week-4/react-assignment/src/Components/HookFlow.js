@@ -57,9 +57,9 @@ const HookFlow = () => {
 
   const [showChild, setShowChild] = useState(() => {
     console.log("%cApp: useState(() => false)", "color: tomato");
-    return false;
+    return true;
   });
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const obj = {};
 
   useEffect(() => {
@@ -69,9 +69,9 @@ const HookFlow = () => {
     };
   });
 
-  const updateWindowWidth = () => {
-    setWindowWidth(window.innerWidth);
-  };
+  // const updateWindowWidth = () => {
+  //   setWindowWidth(window.innerWidth);
+  // };
 
   useEffect(() => {
     console.log("CHEETAH------------------");
