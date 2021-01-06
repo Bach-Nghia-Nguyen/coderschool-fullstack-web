@@ -70,7 +70,7 @@ const HomePage = () => {
           <SearchForm
             loading={loading}
             searchInput={searchInput}
-            handleInputChange={handleSearchInputChange}
+            handleSearchChange={handleSearchInputChange}
             handleSubmit={handleSubmit}
           />
           <hr />
