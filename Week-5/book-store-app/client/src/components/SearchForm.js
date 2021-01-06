@@ -4,19 +4,21 @@ import { Button, Col, Form } from "react-bootstrap";
 const SearchForm = ({
   loading,
   searchInput,
-  handleInputChange,
+  handleSearchChange,
   handleSubmit,
 }) => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Row>
         <Col>
+          {/* Search field */}
           <Form.Control
             placeholder="Search..."
             value={searchInput}
-            onChange={handleInputChange}
+            onChange={handleSearchChange}
           />
         </Col>
+
         {loading ? (
           <Button disabled>
             <span
@@ -24,7 +26,7 @@ const SearchForm = ({
               role="status"
               aria-hidden="true"
             ></span>
-            Searching..
+            Search..
           </Button>
         ) : (
           <Button type="submit">Search</Button>

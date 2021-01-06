@@ -32,7 +32,7 @@ api.interceptors.response.use(
   },
   function (error) {
     // Any status codes that falls outside the range of 2xx cause this function to trigger
-    // Do somthing with response error
+    // Do something with response error
     console.log(error);
     toast.error(error.response.data.message);
     return Promise.reject(error);

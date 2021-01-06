@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
-
-//
 import { Alert, Button, Col, Container, Row } from "react-bootstrap";
-//
 import { useParams } from "react-router-dom";
-//
 import { toast } from "react-toastify";
-//
 import api from "../apiService";
 
 const BACKEND_API = process.env.REACT_APP_BACKEND_API;
@@ -67,7 +62,7 @@ const BookDetailPage = () => {
             <img
               className="w-100"
               src={`${BACKEND_API}/${book.imageLink}`}
-              alt=""
+              alt="book cover"
             />
           )}
         </Col>

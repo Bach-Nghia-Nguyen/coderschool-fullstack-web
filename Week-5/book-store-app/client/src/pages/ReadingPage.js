@@ -7,7 +7,6 @@ const BACKEND_API = process.env.REACT_APP_BACKEND_API;
 
 const ReadingPage = () => {
   const [books, setBooks] = useState([]);
-
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -35,7 +34,7 @@ const ReadingPage = () => {
 
   return (
     <Container>
-      <Row className="jsutify-content-center">
+      <Row className="justify-content-center">
         <Col md={6}>
           <h1 className="text-center">Reading List</h1>
           {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
